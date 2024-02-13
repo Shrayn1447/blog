@@ -5,11 +5,12 @@ import { Inter as FontSans } from "next/font/google"
 import Header from '@/components/Header/Header'
  
 import { cn } from "@/lib/utils"
+import { NextFontWithVariable } from 'next/dist/compiled/@next/font'
  
-export const fontSans = FontSans({
+const fontSans: NextFontWithVariable = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
-})
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
